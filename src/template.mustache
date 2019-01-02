@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Epoch.sh</title>
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+	</head>
+	<body class="antialiased font-sans">
+		<div class="max-w-md mx-auto">
+			<nav class="border-b border-grey-light py-2">
+				<div class="flex items-center justify-between">
+					<div>
+						<h2 class="font-light">
+							<a class="text-grey-darker no-underline" href="https://epoch.sh/">Epoch.sh</a>
+						</h2>
+					</div>
+					<div>
+						Built by <a href="http://prefinem.com">Prefinem</a>
+					</div>
+				</div>
+			</nav>
+
+			<div class="mt-5 pb-5 border-b border-grey-light">
+				<h1 class="text-4xl font-light mb-4">Current Time</h1>
+				<ul class="list-reset">
+					<li class="flex justify-between mb-2"><label>Current Time</label><a href="https://epoch.sh/{{utc}}">{{utcPretty}} UTC</a></li>
+					<li class="flex justify-between mb-2"><label>Local Time</label><a href="https://epoch.sh/{{local}}">{{localPretty}}</a></li>
+					<li class="flex justify-between mb-2"><label>Unix Time</label><a href="https://epoch.sh/{{unix}}">{{unix}}</a></li>
+				</ul>
+			</div>
+
+			<div class="mt-5 pb-5 border-b border-grey-light">
+				<h2 class="text-3xl font-light mb-4">Convert Timestamp</h2>
+				<form onsubmit="window.location.href = '/' + document.getElementById('timestamp').value; return false;">
+					<div class="flex">
+						<input class="border rounded border-grey-light p-1 flex-grow mr-2" type="text" id="timestamp" placeholder="timestamp">
+						<button class="border rounded bg-grey-light p-1" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="mt-5 pb-5 border-b border-grey-light">
+				<h2 class="text-3xl font-light">API</h2>
+				<div>
+					<h4 class="font-light mb-4">Get the time</h4>
+					<div class="mb-2">
+						<code>GET <a href="https://epoch.sh/?json">https://epoch.sh/?json</a></code>
+					</div>
+					<div>
+						<pre class="bg-grey-lighter p-3">{
+	"local": "{{local}}",
+	"unix": {{unix}},
+	"utc": "{{utc}}"
+}</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
