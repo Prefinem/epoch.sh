@@ -1248,7 +1248,7 @@ cookie-signature@1.0.6:
   resolved "https://registry.yarnpkg.com/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
   integrity sha1-4wOogrNCzD7oylE6eZmXNNqzriw=
 
-cookie@0.3.1:
+cookie@0.3.1, cookie@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
@@ -3909,10 +3909,12 @@ kleur@^2.0.1:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-2.0.2.tgz#b704f4944d95e255d038f0cb05fb8a602c55a300"
   integrity sha512-77XF9iTllATmG9lSlIv0qdQ2BQ/h9t0bJllHlbvsQ0zUWfU7Yi0S8L5JXzPZgkefIiajLmBJJ4BsMJmqcf7oxQ==
 
-lambdify@4.0.0-0:
-  version "4.0.0-0"
-  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.0.0-0.tgz#e9cde7141760c3560202d5a45a7e7bbdc4e032d6"
-  integrity sha512-vw9hpTWcO64nMnBecFeKUUr2hMPHEQ886FHt4tX4RQP00CrZGJZZMqhEwwk5fouIrF56IMC0MGVu4Iw78onlXw==
+lambdify@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.0.3.tgz#17dd80650d36b74349fdee4ab164037184ff71d7"
+  integrity sha512-o/ZzNXgEknBXyS1p/o+57kxJlTYx4Rdc/8BNv9jV8ZZoLNveF/cYlKO6PWR9zW2eSTJISKvnwx38wkdg6OyNxQ==
+  dependencies:
+    cookie "^0.3.1"
 
 latest-version@^3.0.0:
   version "3.1.0"

@@ -1,4 +1,3 @@
-const { html, request } = require('lambdify/middleware');
 const Mustache = require('mustache');
 const lambdify = require('lambdify');
 const fs = require('fs');
@@ -25,13 +24,16 @@ const prettyTime = (time) =>
 		.slice(0, 5)
 		.join(' ');
 
-const run = (request) => {
-	if (request.pathParams.time === 'favicon.ico') {
+const run = (request, response) => {
+	const pathParams = request.getPathParams() || {};
+	const queryParams = request.getQueryParams() || {};
+
+	if (pathParams.time === 'favicon.ico') {
 		return '';
 	}
 
 	const template = fs.readFileSync(`${srcDir}/template.mustache`).toString();
-	const time = getTime(request.pathParams.time);
+	const time = getTime(pathParams.time);
 	const data = {
 		local: time.toString(),
 		localPretty: prettyTime(time.toString()),
@@ -39,8 +41,9 @@ const run = (request) => {
 		utc: time.toUTCString(time.toString()),
 		utcPretty: prettyTime(time.toUTCString()),
 	};
+	const html = Mustache.render(template, data);
 
-	return Mustache.render(template, data);
+	return typeof queryParams.json === 'undefined' ? response.html(html) : response.json(data);
 };
 
-exports.handler = lambdify(run, [request(), html()]);
+exports.handler = lambdify(run);
