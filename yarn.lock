@@ -3909,10 +3909,10 @@ kleur@^2.0.1:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-2.0.2.tgz#b704f4944d95e255d038f0cb05fb8a602c55a300"
   integrity sha512-77XF9iTllATmG9lSlIv0qdQ2BQ/h9t0bJllHlbvsQ0zUWfU7Yi0S8L5JXzPZgkefIiajLmBJJ4BsMJmqcf7oxQ==
 
-lambdify@^4.0.2:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.0.3.tgz#17dd80650d36b74349fdee4ab164037184ff71d7"
-  integrity sha512-o/ZzNXgEknBXyS1p/o+57kxJlTYx4Rdc/8BNv9jV8ZZoLNveF/cYlKO6PWR9zW2eSTJISKvnwx38wkdg6OyNxQ==
+lambdify@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.0.5.tgz#fb986c0b77fb4ccfb90eff9444f0a9e1f49523d1"
+  integrity sha512-dG6tMc3V/1obfF30CpjXPIdvioiEKIYUYU8QzceISpAsc1p/TQ3bHk2MEFYauMwIJZxFo+IJ8KsrybQGJfCbqQ==
   dependencies:
     cookie "^0.3.1"
 

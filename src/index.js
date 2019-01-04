@@ -25,15 +25,12 @@ const prettyTime = (time) =>
 		.join(' ');
 
 const run = (request, response) => {
-	const pathParams = request.getPathParams() || {};
-	const queryParams = request.getQueryParams() || {};
-
-	if (pathParams.time === 'favicon.ico') {
+	if (request.getPathParams().time === 'favicon.ico') {
 		return '';
 	}
 
 	const template = fs.readFileSync(`${srcDir}/template.mustache`).toString();
-	const time = getTime(pathParams.time);
+	const time = getTime(request.getPathParams().time);
 	const data = {
 		local: time.toString(),
 		localPretty: prettyTime(time.toString()),
@@ -43,7 +40,7 @@ const run = (request, response) => {
 	};
 	const html = Mustache.render(template, data);
 
-	return typeof queryParams.json === 'undefined' ? response.html(html) : response.json(data);
+	return typeof request.getQueryParams().json === 'undefined' ? response.html(html) : response.json(data);
 };
 
 exports.handler = lambdify(run);
