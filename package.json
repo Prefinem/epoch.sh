@@ -1,7 +1,7 @@
 {
 	"author": "Prefinem",
 	"dependencies": {
-		"lambdify": "^4.0.5",
+		"lambdify": "^4.0.8",
 		"mustache": "^3.0.1"
 	},
 	"description": "Epoch.sh Lambda Functions",
@@ -15,6 +15,7 @@
 		"lint-staged": "^8.1.0",
 		"prettier": "^1.15.3",
 		"serverless": "^1.35.1",
+		"serverless-apigw-binary": "^0.4.4",
 		"serverless-content-encoding": "^1.1.0",
 		"serverless-domain-manager": "^2.6.10",
 		"serverless-offline": "^3.31.3",

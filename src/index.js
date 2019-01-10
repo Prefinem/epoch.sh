@@ -40,6 +40,8 @@ const run = (request, response) => {
 	};
 	const html = Mustache.render(template, data);
 
+	response.setBinaryResponse(true);
+
 	return typeof request.getQueryParams().json === 'undefined' ? response.html(html) : response.json(data);
 };
 

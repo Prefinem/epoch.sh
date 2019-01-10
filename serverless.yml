@@ -23,12 +23,20 @@ functions:
           cors: true
           method: any
           path: /{time}
+  favicon:
+    handler: src/favicon.handler
+    events:
+      - http:
+          cors: true
+          method: get
+          path: /favicon.ico
 plugins:
   - serverless-domain-manager
   - serverless-offline
   - serverless-plugin-log-retention
   - serverless-content-encoding
   - serverless-prune-plugin
+  - serverless-apigw-binary
 custom:
   customDomain:
     certificateName: '*.epoch.sh'
@@ -42,3 +50,7 @@ custom:
     number: 3
   contentEncoding:
     minimumCompressionSize: 0
+  apigwBinary:
+    types:
+      - 'image/*'
+
