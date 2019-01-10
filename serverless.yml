@@ -52,5 +52,5 @@ custom:
     minimumCompressionSize: 0
   apigwBinary:
     types:
-      - 'image/*'
+      - '*/*'
 
