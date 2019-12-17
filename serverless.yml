@@ -1,56 +1,55 @@
 service: epoch-sh
 provider:
-  memorySize: 128
-  name: aws
-  profile: william
-  region: us-east-1
-  role: 'arn:aws:iam::636375193492:role/service-role/lamba'
-  runtime: nodejs8.10
-  deploymentBucket: sls-deploy-bucket
-  stage: prod
-  environment:
+    memorySize: 128
+    name: aws
+    profile: william
+    region: us-east-1
+    role: 'arn:aws:iam::636375193492:role/service-role/lamba'
+    runtime: nodejs12.x
+    deploymentBucket: sls-deploy-bucket
     stage: prod
-    project: '${self:service}'
+    environment:
+        stage: prod
+        project: '${self:service}'
 functions:
-  main:
-    handler: src/index.handler
-    events:
-      - http:
-          cors: true
-          method: any
-          path: /
-      - http:
-          cors: true
-          method: any
-          path: /{time}
-  favicon:
-    handler: src/favicon.handler
-    events:
-      - http:
-          cors: true
-          method: get
-          path: /favicon.ico
+    main:
+        handler: src/index.handler
+        events:
+            - http:
+                  cors: true
+                  method: any
+                  path: /
+            - http:
+                  cors: true
+                  method: any
+                  path: /{time}
+    favicon:
+        handler: src/favicon.handler
+        events:
+            - http:
+                  cors: true
+                  method: get
+                  path: /favicon.ico
 plugins:
-  - serverless-domain-manager
-  - serverless-offline
-  - serverless-plugin-log-retention
-  - serverless-content-encoding
-  - serverless-prune-plugin
-  - serverless-apigw-binary
+    - serverless-domain-manager
+    - serverless-offline
+    - serverless-plugin-log-retention
+    - serverless-content-encoding
+    - serverless-prune-plugin
+    - serverless-apigw-binary
 custom:
-  customDomain:
-    certificateName: '*.epoch.sh'
-    basePath: ''
-    domainName: epoch.sh
-    stage: prod
-    createRoute53Record: true
-  logRetentionInDays: 7
-  prune:
-    automatic: true
-    number: 3
-  contentEncoding:
-    minimumCompressionSize: 0
-  apigwBinary:
-    types:
-      - '*/*'
-
+    customDomain:
+        certificateName: '*.epoch.sh'
+        basePath: ''
+        domainName: epoch.sh
+        stage: prod
+        createRoute53Record: true
+    logRetentionInDays: 7
+    prune:
+        automatic: true
+        number: 3
+    contentEncoding:
+        minimumCompressionSize: 0
+    apigwBinary:
+        types:
+            - '*/*'

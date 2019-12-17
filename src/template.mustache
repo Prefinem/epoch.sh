@@ -8,7 +8,7 @@
 		<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 	</head>
 	<body class="antialiased font-sans">
-		<div class="max-w-md mx-auto">
+		<div class="container mx-auto">
 			<nav class="border-b border-grey-light py-2">
 				<div class="flex items-center justify-between">
 					<div>
@@ -36,7 +36,7 @@
 				<form onsubmit="window.location.href = '/' + document.getElementById('timestamp').value; return false;">
 					<div class="flex">
 						<input class="border rounded border-grey-light p-1 flex-grow mr-2" type="text" id="timestamp" placeholder="timestamp">
-						<button class="border rounded bg-grey-light p-1" type="submit">Submit</button>
+						<button class="border rounded bg-gray-200 p-1 px-4" type="submit">Submit</button>
 					</div>
 				</form>
 			</div>
@@ -49,7 +49,7 @@
 						<code>GET <a href="https://epoch.sh/?json">https://epoch.sh/?json</a></code>
 					</div>
 					<div>
-						<pre class="bg-grey-lighter p-3">{
+						<pre class="bg-gray-200 p-3">{
 	"local": "{{local}}",
 	"localPretty": "{{localPretty}}",
 	"unix": {{unix}},
