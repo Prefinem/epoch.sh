@@ -6042,10 +6042,10 @@ serverless-offline@3.33.0:
     uuid "^3.3.2"
     velocityjs "^1.1.2"
 
-serverless-plugin-log-retention@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/serverless-plugin-log-retention/-/serverless-plugin-log-retention-1.0.3.tgz#aab3ea8a313f3a50c5a475ad2ba1358e479389fe"
-  integrity sha1-qrPqijE/OlDFpHWtK6E1jkeTif4=
+serverless-plugin-log-retention@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/serverless-plugin-log-retention/-/serverless-plugin-log-retention-2.0.0.tgz#da0b5b6d01a5b19c6fd6d3e0e36642f1fc5739ad"
+  integrity sha512-TXKMfLdVxhamyaDbqr+gwjIeiqSnDw3z+bZQy0W2ctRpcedUY8hg58wwMZqAFyMS3QekHT9srCe4Qv7lfPwkGw==
   dependencies:
     nco "1.0.1"
     semver "5.4.1"
