@@ -4565,13 +4565,13 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-lambdify@4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.2.5.tgz#586732264740ea92c65cd82ae18c441c6cdb3b23"
-  integrity sha512-5BSmko1tRp3tDCYFAlLcL9ozycPPVvHt/egRrM5lnTeCYpj0DIcPnXpnwQsbUH1WSJBiUw8gfLAJFoffykJPjw==
+lambdify@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.3.0.tgz#cbd9a1f988df5def370e104bdd7be3b3607fb88a"
+  integrity sha512-Q6QUJoaD4mxv5nfnVuJzMN6zqZRaru0XY9YKekmSJCqzMw43ckBRNkmF5M9qYPalzqKu8IrOdg02ggLN0g1Ajg==
   dependencies:
     cookie "^0.4.0"
-    url-pattern "^1.0.3"
+    path-to-regexp "^6.1.0"
 
 latest-version@^3.0.0:
   version "3.1.0"
@@ -5657,6 +5657,11 @@ path-parse@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+
+path-to-regexp@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.1.0.tgz#0b18f88b7a0ce0bfae6a25990c909ab86f512427"
+  integrity sha512-h9DqehX3zZZDCEm+xbfU0ZmwCGFCAAraPJWMXJ4+v32NjZJilVg3k1TcKsRgIb8IQ/izZSaydDc1OhJCZvs2Dw==
 
 path-type@^3.0.0:
   version "3.0.0"
@@ -7272,11 +7277,6 @@ url-parse-lax@^3.0.0:
   integrity sha1-FrXK/Afb42dsGxmZF3gj1lA6yww=
   dependencies:
     prepend-http "^2.0.0"
-
-url-pattern@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/url-pattern/-/url-pattern-1.0.3.tgz#0409292471b24f23c50d65a47931793d2b5acfc1"
-  integrity sha1-BAkpJHGyTyPFDWWkeTF5PStaz8E=
 
 url-to-options@^1.0.1:
   version "1.0.1"
