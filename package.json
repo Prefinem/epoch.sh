@@ -1,7 +1,7 @@
 {
 	"author": "Prefinem",
 	"dependencies": {
-		"lambdify": "4.3.0",
+		"lambdify": "4.3.1",
 		"mustache": "4.0.1"
 	},
 	"description": "Epoch.sh Lambda Functions",
