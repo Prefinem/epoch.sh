@@ -1512,6 +1512,11 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+binary-case@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/binary-case/-/binary-case-1.1.4.tgz#d687104d59e38f2b9e658d3a58936963c59ab931"
+  integrity sha512-9Kq8m6NZTAgy05Ryuh7U3Qc4/ujLQU1AZ5vMw4cr3igTdi5itZC6kCNrRr2X8NzPiDn2oUIFTfa71DKMnue/Zg==
+
 binary-extensions@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.0.0.tgz#23c0df14f6a88077f5f986c0d167ec03c3d5537c"
@@ -4826,11 +4831,12 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-lambdify@4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.3.0.tgz#cbd9a1f988df5def370e104bdd7be3b3607fb88a"
-  integrity sha512-Q6QUJoaD4mxv5nfnVuJzMN6zqZRaru0XY9YKekmSJCqzMw43ckBRNkmF5M9qYPalzqKu8IrOdg02ggLN0g1Ajg==
+lambdify@4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.3.1.tgz#b4b759cb3009582e1e6380d1f90e7d2372ce76bc"
+  integrity sha512-y4kzcdcd70ixHZxzb70TBJLpDCDDKeT6BydvZC8EMor48SAs92gvSw7nRd/Fiu3PwjBQ4nhIuqUz24PNa2GIHg==
   dependencies:
+    binary-case "^1.1.4"
     cookie "^0.4.0"
     path-to-regexp "^6.1.0"
 
