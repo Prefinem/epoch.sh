@@ -7427,10 +7427,10 @@ serverless-content-encoding@1.1.0:
   resolved "https://registry.yarnpkg.com/serverless-content-encoding/-/serverless-content-encoding-1.1.0.tgz#d284fb16ac25f8603d42dcc3afa826438baf5b01"
   integrity sha1-0oT7Fqwl+GA9QtzDr6gmQ4uvWwE=
 
-serverless-domain-manager@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/serverless-domain-manager/-/serverless-domain-manager-4.0.0.tgz#f45d86f5d3b9b9e583910026ed67b4c3335a99db"
-  integrity sha512-Slrfv7BPTn8Clr6hnMG3clbNk5Evo4R2G10BsSWahJYRHfTDZhjE0tOCZTLf3dBh4Ah8B7W1yoTUSaukAwUeqQ==
+serverless-domain-manager@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/serverless-domain-manager/-/serverless-domain-manager-4.1.0.tgz#0e8daf3a0aa21b41d6162c34607d35ac073d0cdd"
+  integrity sha512-8RK4qJ0pCoCSzj4eS32z49tKwymntO/dx7xQ3m2lYobaGtNNC0ESSdBAl1ILadyWJ0jzzZ1HysdDcZl+M+LMFQ==
   dependencies:
     aws-sdk "^2.490.0"
     chalk "^2.4.1"
