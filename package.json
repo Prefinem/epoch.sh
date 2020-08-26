@@ -13,7 +13,7 @@
 		"husky": "4.2.5",
 		"jest": "26.4.2",
 		"lint-staged": "10.2.13",
-		"prettier": "2.1.0",
+		"prettier": "2.1.1",
 		"serverless": "1.79.0",
 		"serverless-apigw-binary": "0.4.4",
 		"serverless-content-encoding": "1.1.0",
