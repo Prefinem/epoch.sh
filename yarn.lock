@@ -5593,10 +5593,10 @@ kuler@1.0.x:
   dependencies:
     colornames "^1.1.1"
 
-lambdify@4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.3.1.tgz#b4b759cb3009582e1e6380d1f90e7d2372ce76bc"
-  integrity sha512-y4kzcdcd70ixHZxzb70TBJLpDCDDKeT6BydvZC8EMor48SAs92gvSw7nRd/Fiu3PwjBQ4nhIuqUz24PNa2GIHg==
+lambdify@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.3.2.tgz#0161764be51171ef94d4f3f6c7694044076e8103"
+  integrity sha512-bEcQEgk6aHZ56Ao7U7unrOSpaLrsuTvAxHDD977o1F9hdIiyaZ7tu/W4D34yETc37fGDVxVFxaxqLvM+XPKLVQ==
   dependencies:
     binary-case "^1.1.4"
     cookie "^0.4.0"
