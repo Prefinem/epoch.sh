@@ -14,7 +14,7 @@
 		"jest": "26.6.3",
 		"lint-staged": "10.5.1",
 		"prettier": "2.2.1",
-		"serverless": "2.10.0",
+		"serverless": "2.15.0",
 		"serverless-apigw-binary": "0.4.4",
 		"serverless-content-encoding": "1.1.0",
 		"serverless-domain-manager": "5.0.0",
