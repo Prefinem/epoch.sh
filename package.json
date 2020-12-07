@@ -6,7 +6,7 @@
 	},
 	"description": "Epoch.sh Lambda Functions",
 	"devDependencies": {
-		"eslint": "7.13.0",
+		"eslint": "7.15.0",
 		"eslint-config-prettier": "7.0.0",
 		"eslint-plugin-jest": "24.1.3",
 		"eslint-plugin-react": "7.21.5",
