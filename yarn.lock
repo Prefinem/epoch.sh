@@ -5806,10 +5806,10 @@ kuler@1.0.x:
   dependencies:
     colornames "^1.1.1"
 
-lambdify@4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.3.2.tgz#0161764be51171ef94d4f3f6c7694044076e8103"
-  integrity sha512-bEcQEgk6aHZ56Ao7U7unrOSpaLrsuTvAxHDD977o1F9hdIiyaZ7tu/W4D34yETc37fGDVxVFxaxqLvM+XPKLVQ==
+lambdify@4.3.3:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/lambdify/-/lambdify-4.3.3.tgz#34c7e354667a8e893ffbfeea8e27b3f6fcb37341"
+  integrity sha512-xeN2aEF5mdoN1z6WH4yLIhbGgWvLG96k0UccwkWqse6Hp9NlVzGSW86945rRVBdbBnbuvpiE3VHAsMZ545PUcA==
   dependencies:
     binary-case "^1.1.4"
     cookie "^0.4.0"
